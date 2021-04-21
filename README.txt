@@ -1,11 +1,11 @@
 
 Scripts for: 'Climate change risks to push one-third of global food production outside Safe Climatic Space'
-By: Matti Kummu, Matias Heino, Maija Taka, Olli Varis & Daniel Viviroli
+By: Matti Kummu, Matias Heino, Maija Taka, Olli Varis & Daniel Viviroli (1)
 
 The analysis is composed of six main MATLAB and R scripts:
 
 1) holdridge_step1_download_data.m
-  - downloads and the present and future climatological datafrom Worldclim (1),
+  - downloads and the present and future climatological datafrom Worldclim (2),
     and combines them to MATLAB format
 
 2) holdridge_step2_define_classes.m
@@ -32,17 +32,19 @@ holdridge zones are in the 'input' folder. Use the provided hLand.mat file to ha
 land mask that was used in the analyses of the study.
 
 The scripts have a coherent file structure, but crop and animal production,
-and resilience data are from external sources (2,3,4). Crop production calculations
+and resilience data are from external sources (3-5). Crop production calculations
 can be found in R-script 'production_kcal_spam2010.R'.
 
 References:
-1) Fick, S.E., and Hijmans, R.J. (2017). WorldClim 2: new 1-km spatial resolution climate surfaces
+1) Kummu, M., Heino, M., Taka, M., Varis, O., Viviroli, D. (2021). Climate change risks to push one-third of global
+   food production outside Safe Climatic Space. EarthArXiv (Preprint) https://doi.org/10.31223/X53K7V
+2) Fick, S.E., and Hijmans, R.J. (2017). WorldClim 2: new 1-km spatial resolution climate surfaces
    for global land areas. International Journal of Climatology 37, 4302–4315.
-2) Yu, Q., You, L., Wood-Sichra, U., Ru, Y., Joglekar, A.K.B., Fritz, S., Xiong, W., Lu, M., Wu, W.,
-   and Yang, P. (2020). A cultivated planet in 2010 – Part 2: The global gridded agriculturalproduction
+3) Yu, Q., You, L., Wood-Sichra, U., Ru, Y., Joglekar, A.K.B., Fritz, S., Xiong, W., Lu, M., Wu, W.,
+   and Yang, P. (2020). A cultivated planet in 2010 – Part 2: The global gridded agricultural production
    maps. Earth System Science Data 12, 3545–3572.
-3) Gilbert, M., Nicolas, G., Cinardi, G., Van Boeckel, T.P., Vanwambeke, S.O., Wint, G.R.W., and
+4) Gilbert, M., Nicolas, G., Cinardi, G., Van Boeckel, T.P., Vanwambeke, S.O., Wint, G.R.W., and
    Robinson, T.P. (2018). Global distribution data for cattle, buffaloes, horses, sheep, goats, pigs,
    chickens and ducks in 2010. Scientific Data 5, 180227.
-4) Varis, O., Taka, M., and Kummu, M. (2019). The Planet’s Stressed River Basins: Too Much
+5) Varis, O., Taka, M., and Kummu, M. (2019). The Planet’s Stressed River Basins: Too Much
    Pressure or Too Little Adaptive Capacity? Earth’s Future 7, 1118–1135.
