@@ -141,11 +141,11 @@ function [aggreg_SCS_med, aggreg_SCS_GGCMs, glob_ref_res_table_out, cntry_table]
 
     % Calculate precipitation and PET-ratio, based on the location on the
     % triangle axes.
-        log10_precip = t1*(log10(class_bound(2,1))-log10(class_bound(1,1))) + log10(class_bound(1,1));
-        precip = 10.^log10_precip;
+        log2_precip = t1*(log2(class_bound(2,1))-log2(class_bound(1,1))) + log2(class_bound(1,1));
+        precip = 2.^log2_precip;
 
-        log10_PET_ratio = t2*(log10(class_bound(2,2))-log10(class_bound(1,2))) + log10(class_bound(1,2));
-        PET_ratio = 10.^log10_PET_ratio;
+        log2_PET_ratio = t2*(log2(class_bound(2,2))-log2(class_bound(1,2))) + log2(class_bound(1,2));
+        PET_ratio = 2.^log2_PET_ratio;
 
     % Check that the numbers make sense.
         'min P'

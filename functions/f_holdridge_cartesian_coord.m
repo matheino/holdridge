@@ -9,9 +9,9 @@ data_in(data_in<=0) = 0;
 
 % calculate the position 
 % precip
-temp_position(:,1) = ( log10(data_in(:,2))-log10(class_bound(1,1)) ) / ( log10(class_bound(2,1))-log10(class_bound(1,1)) );
+temp_position(:,1) = ( log2(data_in(:,2))-log2(class_bound(1,1)) ) / ( log2(class_bound(2,1))-log2(class_bound(1,1)) );
 % PET ratio
-temp_position(:,2) = ( log10(data_in(:,1))-log10(class_bound(1,2)) ) / ( log10(class_bound(2,2))-log10(class_bound(1,2)) );
+temp_position(:,2) = ( log2(data_in(:,1))-log2(class_bound(1,2)) ) / ( log2(class_bound(2,2))-log2(class_bound(1,2)) );
 
 % in cases outside the boundaries, above 1 to 1; below 0 to 0
 temp_position(temp_position < 0) = 0;
